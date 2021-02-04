@@ -8,16 +8,19 @@
  */
 int main(void)
 {
-	int i, x;
+	int i, b;
 
-	for (i = 'A'; i <= 'Z'; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
 
-	x = tolower(i);
-
-	putchar(x);
-
 	putchar(i);
+
+	}
+
+	for (b = 'A'; b <= 'Z'; b++)
+	{
+
+	putchar(b);
 
 	}
 
