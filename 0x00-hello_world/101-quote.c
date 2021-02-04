@@ -7,9 +7,11 @@
  */
 int main(void)
 {
-	char hola = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char m[100];
 
-	putchar(hola);
+	m = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	
+	scanf("%s",m);
 
 	return (1);
 }
