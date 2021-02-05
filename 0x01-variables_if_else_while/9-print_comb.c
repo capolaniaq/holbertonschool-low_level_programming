@@ -23,9 +23,9 @@ int main(void)
 
 		}
 
-	putchar(',');
+	putchar(44);
 
-	putchar('\t');
+	putchar(32);
 
 
 	}
