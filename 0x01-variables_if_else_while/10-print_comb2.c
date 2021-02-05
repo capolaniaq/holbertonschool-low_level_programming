@@ -21,9 +21,17 @@ int main(void)
 
 		putchar(b);
 
-		putchar(',');
+			if (i == 57 && b == 57)
 
-		putchar('\t');
+			{
+
+			break;
+
+			}
+		
+		putchar(44);
+
+		putchar(32);
 
 		}
 
