@@ -15,9 +15,18 @@ int main(void)
 
 	putchar(i);
 
+		if (i == 57)
+
+		{
+
+		break;
+
+		}
+		
 	putchar(',');
 
 	putchar('\t');
+
 
 	}
 
