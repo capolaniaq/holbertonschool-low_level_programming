@@ -26,6 +26,12 @@ void times_table(void)
 			_putchar('0' + c / 10);
 			_putchar('0' + c % 10);
 			}
+			else if (b == 0)
+			{
+			_putchar('0' + c);
+			_putchar(44);
+			_putchar(32);
+			}
 			else if (c < 10)
 			{
 			_putchar(32);
