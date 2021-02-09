@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-
 	int i;
+
 	char txt[10] = "Holberton\n";
 
 	for (i = 0; i <= 8; i++)
