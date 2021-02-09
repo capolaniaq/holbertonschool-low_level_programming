@@ -17,7 +17,14 @@ int print_sign(int n);
 int _abs(int);
 /*write a function thath prints the last digit of a number*/
 int print_last_digit(int);
-
+/*Write a function that prints every minute of the day of Jack Bauer, starting*/
+void jack_bauer(void);
+/*write a function that prints the 9 times table, starting with 0*/
+void times_table(void);
+/*Write a function that adds two integers and returns the result.*/
+int add(int, int);
+/*Write a function that prints all natural numbers from n to 98, followed by a new line.*/
+void print_to_98(int n);
 
 
 
