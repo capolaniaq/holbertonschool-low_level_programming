@@ -2,7 +2,6 @@
 /**
  * times_table - returns 1 is lowercase, 0 otherwise
  * void: no input paramether
- *
  * Return: alwais 0;
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -15,7 +14,6 @@ void times_table(void)
 		for (b = 0; b <= 9; b++)
 		{
 			c = a * b;
-
 			if (c < 10 && b == 9)
 			{
 			_putchar(32);
