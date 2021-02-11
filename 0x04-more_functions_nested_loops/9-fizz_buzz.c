@@ -2,16 +2,16 @@
 #include <stdio.h>
 
 /**
-* main - not parameters inside
-* Return - 0 alwais
-*
-*/
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
 
-int main (void)
+int main(void)
 {
 	int a;
 
-	for (a =1; a <= 100; a++)
+	for (a = 1; a <= 100; a++)
 	{
 
 		if (a % 3 == 0)
@@ -26,15 +26,14 @@ int main (void)
 		{
 			printf("FizzBuzz");
 		}
-		else 
+		else
 		{
 			printf("%d", a);
 		}
 		printf("\t");
 
-	} 
-	
+	}
 	printf("\n");
-	return (0); 
+	return (0);
 
 }
