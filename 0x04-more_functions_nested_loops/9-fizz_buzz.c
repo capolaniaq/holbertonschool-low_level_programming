@@ -31,7 +31,7 @@ int main(void)
 		}
 		else if (a == 100)
 		{
-			printf("%d", a);
+			printf("%i", a);
 		}
 		else
 		{
