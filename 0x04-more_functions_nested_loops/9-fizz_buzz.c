@@ -29,7 +29,7 @@ int main(void)
 		{
 			printf("%d", a);
 		}
-		printf("\t");
+		printf(" ");
 
 	}
 	printf("\n");
