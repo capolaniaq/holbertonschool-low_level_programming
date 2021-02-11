@@ -25,6 +25,11 @@ int main(void)
 		{
 			printf("Fizz");
 		}
+		else if (a == 100)
+		{
+			printf("%d", a);
+			break;
+		}
 		else
 		{
 			printf("%d", a);
