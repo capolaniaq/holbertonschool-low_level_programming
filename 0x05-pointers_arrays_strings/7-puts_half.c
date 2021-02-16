@@ -22,7 +22,7 @@ void puts_half(char *str)
 		c++;
 
 
-	while (c < a) 
+	while (c < a)
 	{
 		_putchar(str[c]);
 		c++;
