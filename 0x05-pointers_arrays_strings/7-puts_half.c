@@ -11,14 +11,12 @@ void puts_half(char *str)
 {
 	int a = 0;
 
-	int c, d;
+	int c;
 
 	while (*(str + a) != '\0')
 		a++;
 
-	d = a -1;
-
-	for (c = d / 2; c <= d; c++)
+	for (c = a / 2; c <= a - 1; c++)
 	{
 		_putchar(str[c]);
 	}
