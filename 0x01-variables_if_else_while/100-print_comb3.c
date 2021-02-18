@@ -18,14 +18,7 @@ int main(void)
 
 		if (a != b)
 		{
-			if (i < 10)
-			{
-				putchar('0' + a);
-				putchar('0' + b);
-				putchar(44);
-				putchar(32);
-			}
-			else if (i % 10 == 0)
+			if (i % 10 == 0)
 			{
 				a++;
 			}
