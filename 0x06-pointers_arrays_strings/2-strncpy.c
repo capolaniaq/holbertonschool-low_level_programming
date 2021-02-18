@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
 * *_strncpy - append the string on the final the firts string
@@ -22,10 +23,15 @@ char *_strncpy(char *dest, char *src, int n)
 	while (*(dest + a) != '\0')
 		a++;
 
-
-	for (b = 0; b < n; b++)
+	for (b = 0; src[b] != '\0' && b < n; b++)
 	{
 		dest[b] = src[b];
+	}
+
+
+	for (; b < n; b++)
+	{
+		dest[b] = '\0';
 	}
 
 	return (dest);
