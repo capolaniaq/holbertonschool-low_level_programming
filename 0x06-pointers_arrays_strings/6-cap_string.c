@@ -1,70 +1,36 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
-* lowercase - capitallising the string
-* @s: char for the capitalising
-* Return: char whit the capitalized
-*/
-
-int lowercase(int s)
-{
-	char lower[] = "abcdefghijklmnopqrstuvwxyz";
-
-	int  j, a;
-
-	a = 0;
-
-	for (j = 0; lower[j] != '\0'; j++)
-	{
-		if (s == lower[j])
-			a = 1;
-	}
-
-	return (a);
-}
-
-
-/**
-* separetor - caracteres to capitalice
-* @s: integer responde
-* Return: value a
-*/
-
-int separetor(int s)
-{
-	char separators[] = "' ''\t''\n',;.!?\"(){}";
-
-	int a, j;
-
-	a = 0;
-
-	for (j = 0; separators[j] != '\0'; j++)
-	{
-		if (s == separators[j])
-			a = 1;
-	}
-
-	return (a);
-}
-
-/**
-* *cap_string - capitalice string
-* @s: string for the value
-* Return: value a
+* *cap_string - capitalice a string
+* @s: inside
+* Return: char with the capitalice
 */
 
 char *cap_string(char *s)
 {
 
-	int i;
+	int a, b, c;
 
-	if (lowercase(s[0] == 1))
+	a = 0;
+
+	while (*(s + a) != '\0')
+		a++;
+
+	if (s[0] > 96 && s[0] <= 122)
 		s[0] = s[0] - 32;
 
-	for (i = 0; s[i] != '\0'; i++)
-		if (separetor(s[i - 1]) == 1 && lowercase(s[i]) == 1)
-			s[i] = s[i] - 32;
+	for (b = 0; b < a; b++)
+	{
+		c = b - 1;
+
+		if (s[c] == 10 || s[c] == 32 || s[c] == 34 
+			|| s[c] == 33 || s[c] == '(' || s[c] == ')'
+			|| s[c] == ';' || s[c] == '?' || s[c] == ','
+			|| s[c] == '.' || s[c] == '{' || s[c] == '}')
+				if (s[b] >= 97 && s[c] <= 122)
+					s[b] = s[b] -32;
+
+	}
 
 	return (s);
 
