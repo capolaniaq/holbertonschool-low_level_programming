@@ -1,52 +1,70 @@
 #include "holberton.h"
+
 /**
-* *cap_string - capitallising the string
+* lowercase - capitallising the string
 * @s: char for the capitalising
 * Return: char whit the capitalized
 */
+
+int lowercase(int s)
+{
+	int  j, a;
+
+	a = 0;
+
+	char lower[] = "abcdefghijklmnopqrstuvwxyz";
+
+	for (j = 0; lower[j] != '\0'; j++)
+	{
+		if (s == lower[j])
+			a = 1;
+	}
+
+	return (a);
+}
+
+
+/**
+* separetor - caracteres to capitalice
+* @s: integer responde
+* Return: value a
+*/
+
+int separetor(int s)
+{
+	int a, j;
+
+	a = 0;
+
+	char separators[] = "' ''\t''\n',;.!?\"(){}";
+
+	for (j = 0; separators[j] != '\0'; j++)
+	{
+		if (s == separators[j])
+			a = 1;
+	}
+
+	return (a);
+}
+
+/**
+* *cap_string - capitalice string
+* @s: string for the value
+* Return: value a
+*/
+
 char *cap_string(char *s)
 {
-	int i, j;
 
-	i = 0;
-	while (*(s + i) != '\0')
-		i++;
-	for (j = 0; j <= i; j++)
-	{
-		if (s[j] == '\n')
-		{
-			s[j] = 10;
-			s[j + 1] = s[j + 1] - 32;
-		}
-		else if (s[j] == '\t' || s[j] == 32)
-		{
-			s[j] = 32;
-			if (!(s[j + 1] >= 65 && s[j + 1] <= 90) && !(s[j + 1] >= 48 && s[j + 1] <= 57))
-				s[j + 1] = s[j + 1] - 32;
-		}
-		else if (s[j] == ',')
-			s[j] = 44;
-		else if (s[j] == ';')
-			s[j] = 59;
-		else if (s[j] == '.')
-		{
-			if (s[j + 1]  >= 97 && s[j + 1] <= 122)
-				s[j + 1] = s[j + 1] - 32;
-		}
-		else if (s[j] == '!')
-			s[j] = 33;
-		else if (s[j] == '?')
-			s[j] = 63;
-		else if (s[j] == '"')
-			s[j] = 34;
-		else if (s[j] == '(')
-			s[j] = 40;
-		else if (s[j] == ')')
-			s[j] = 41;
-		else if (s[j] == '{')
-			s[j] = 123;
-		else if (s[j] == '}')
-			s[j] = 125;
-	}
+	int i;
+
+	if (lowercase(s[0] == 1))
+		s[0] = s[0] - 32;
+
+	for (i = 0; s[i] != '\0'; i++)
+		if (separetor(s[i - 1]) == 1 && lowercase(s[i]) == 1)
+			s[i] = s[i] - 32;
+
 	return (s);
+
 }
