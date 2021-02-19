@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
 * lowercase - capitallising the string
@@ -8,11 +9,11 @@
 
 int lowercase(int s)
 {
+	char lower[] = "abcdefghijklmnopqrstuvwxyz";
+
 	int  j, a;
 
 	a = 0;
-
-	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 
 	for (j = 0; lower[j] != '\0'; j++)
 	{
@@ -32,11 +33,11 @@ int lowercase(int s)
 
 int separetor(int s)
 {
+	char separators[] = "' ''\t''\n',;.!?\"(){}";
+
 	int a, j;
 
 	a = 0;
-
-	char separators[] = "' ''\t''\n',;.!?\"(){}";
 
 	for (j = 0; separators[j] != '\0'; j++)
 	{
