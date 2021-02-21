@@ -16,7 +16,7 @@ int main(void)
 	b = 1;
 	k = 0;
 
-	for (i = 0; i <= 49; i++)
+	for (i = 0; j <= 4000000; i++)
 	{
 		j = a + b;
 		a = b;
@@ -26,14 +26,10 @@ int main(void)
 		{
 			k = k + j;
 		}
-		else if(j == 4000000)
-		{
-			break;
-		}
 
 
 	}
-	printf("%ld", j);
+	printf("%ld", k);
 	printf("\n");
 	return (0);
 
