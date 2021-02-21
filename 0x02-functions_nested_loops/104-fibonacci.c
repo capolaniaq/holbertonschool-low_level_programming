@@ -9,12 +9,11 @@
 int main(void)
 {
 	int i;
-	unsigned long  j, a, b, k;
+	unsigned long int j, a, b;
 
 	j = 0;
 	a = 0;
 	b = 1;
-	k = 0;
 
 	for (i = 0; i < 98; i++)
 	{
