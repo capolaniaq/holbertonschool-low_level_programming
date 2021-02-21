@@ -8,17 +8,23 @@
 
 int main(void)
 {
-	int i, j;
+	int i;
+	long int j, a, b;
 
 	j = 0;
+	a = 0;
+	b = 1;
 
-	for (i = 1; i <= 50; i++)
+
+	for (i = 0; i <= 49; i++)
 	{
-		j = j + i;
+		j = a + b;
+		a = b;
+		b = j;
 
-		printf("%d", j);
+		printf("%ld", j);
 
-		if (i != 50)
+		if (i != 49)
 			printf(", ");
 	}
 	printf("\n");
