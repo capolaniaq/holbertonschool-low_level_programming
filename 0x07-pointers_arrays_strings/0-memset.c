@@ -1,9 +1,11 @@
 #include "holberton.h"
 
 /**
-*
-*
-*
+* *_memset - function that fills memory with a constant byte.
+* @s: pointer char where save and print the characters
+* @b: char for the print in s
+* @n: n bytes of the memory of the area pointed
+* Return: pointer to be memory area s
 */
 
 
