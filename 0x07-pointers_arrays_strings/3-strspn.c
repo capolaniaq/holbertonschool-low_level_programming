@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 	while (*(accept + j) != '\0')
 		j++;
 
-	a = i - (i - j) + 1;
+	a = j + 1;
 
 	return (a);
 
