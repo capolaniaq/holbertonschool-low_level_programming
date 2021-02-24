@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
 * _atoi - function change the string for a number
 * @s: char inside
@@ -8,22 +8,20 @@
 
 int _atoi(char *s)
 {
-	int i, l, j, number, k, b, numberstring;
+	int i, l, j, number, a, b, numberstring;
 
 	i = 0;
 
 	l = 1;
 
-	k = 0;
-
 	b = 0;
 
-	unsigned int a = 1;
+	unsigned int k = 0;
 
 	while (*(s + i) != '\0')
 		i++;
 
-	for (j = i -1; j < 0; j--)
+	for (j = i - 1; j < 0; j--)
 	{
 		if (s[j] >= 48 && s[j] <= 57)
 		{
@@ -35,7 +33,7 @@ int _atoi(char *s)
 		}
 		else if (s[j] == 45 && k > 0)
 		{
-			a = a * (- 1);
+			a = a * (-1);
 		}
 		else if (b == 1)
 		{
