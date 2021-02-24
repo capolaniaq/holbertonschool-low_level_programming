@@ -31,9 +31,9 @@ int _atoi(char *s)
 			number = number - 48;
 			k = k + (number * l);
 			l = l * 10;
-			b = 0;
+			b = 1;
 		}
-		else if (s[j] == 45)
+		else if (s[j - 1] == 45)
 		{
 			a = a * (-1);
 		}
