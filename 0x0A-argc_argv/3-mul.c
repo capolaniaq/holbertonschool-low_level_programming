@@ -11,24 +11,13 @@
 
 int main(int argc, char **argv)
 {
-	int a, b, c;
-
-	b = 1;
+	int c;
 
 	c = 0;
 
-	int count;
-
 	if (argc == 3)
 	{
-		for (count = 1; count < argc; count++)
-		{
-			a = atoi(argv[count]);
-
-			b = b * a;
-		}
-
-		printf("%d\n", b);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	else
 	{
