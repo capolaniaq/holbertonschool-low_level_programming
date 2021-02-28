@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	{
 		for (count = 1; count < argc; count++)
 		{
-			a = atoi(argv[count]);
+			a = *argv[count] - 48;
 
 			b = b * a;
 		}
