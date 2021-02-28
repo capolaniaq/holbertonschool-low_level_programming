@@ -9,11 +9,13 @@
 */
 
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int a, b;
+	int a, b, c;
 
 	b = 1;
+
+	c = 0;
 
 	int count;
 
@@ -31,7 +33,8 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error\n");
+		c = 1;
 	}
 
-	return (1);
+	return (c);
 }
