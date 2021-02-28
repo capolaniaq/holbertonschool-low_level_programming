@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,7 +5,7 @@
 * main - print the name of the file
 * @argc: number for the caracther argv
 * @argv: character for the print
-* Return: Always 0
+* Return: Always 1
 */
 
 
