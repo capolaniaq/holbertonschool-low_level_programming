@@ -18,11 +18,11 @@ int main(int argc, char *argv[])
 
 	int count;
 
-	if (argc > 1)
+	if (argc == 3)
 	{
 		for (count = 1; count < argc; count++)
 		{
-			a = *argv[count] - 48;
+			a = atoi(argv[count]);
 
 			b = b * a;
 		}
