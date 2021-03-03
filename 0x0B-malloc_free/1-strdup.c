@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
 * *_strdup - function that returns a pointer to a
@@ -17,7 +18,7 @@ char *_strdup(char *str)
 
 	char *p;
 
-	if (str == 0)
+	if (str == NULL)
 		return (0);
 
 
@@ -25,7 +26,7 @@ char *_strdup(char *str)
 		i++;
 
 
-	p = malloc(i * sizeof(char));
+	p = malloc(i * sizeof(char) + 1);
 
 	if (p == 0 || i == 0)
 		return (0);
@@ -33,6 +34,8 @@ char *_strdup(char *str)
 
 	for (j = 0; *(str + j) != '\0'; j++)
 		*(p + j) = *(str + j);
+
+	*(p + (j + 1)) = '\0';
 
 	return (p);
 
