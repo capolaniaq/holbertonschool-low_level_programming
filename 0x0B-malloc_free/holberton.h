@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _FUNCTIONS_H_
+#define _FUNCTIONS_H__
 
 /**/
 
