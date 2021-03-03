@@ -11,11 +11,15 @@
 
 char *_strdup(char *str)
 {
-	int i, j;
+	unsigned int i, j;
 
 	i = 0;
 
 	char *p;
+
+	if (str == 0)
+		return (0);
+
 
 	while (str[i] != '\0')
 		i++;
@@ -28,8 +32,7 @@ char *_strdup(char *str)
 
 
 	for (j = 0; *(str + j) != '\0'; j++)
-		p[j] = *(str + j);
-
+		*(p + j) = *(str + j);
 
 	return (p);
 
