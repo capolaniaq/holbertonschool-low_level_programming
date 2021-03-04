@@ -27,10 +27,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		lenght1++;
 	while (*(s2 + lenght2) != '\0')
 		lenght2++;
-	if (lenght2 <= n)
+	if (lenght2 >= n)
 		lenght2 = n;
 
-	charconcat = malloc((lenght1 + n + 1) * sizeof(char));
+	charconcat = malloc((lenght1 + lenght2 + 1) * sizeof(char));
 
 	if (charconcat == NULL)
 		return (0);
