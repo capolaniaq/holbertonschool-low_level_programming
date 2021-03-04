@@ -28,7 +28,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (*(s2 + lenght2) != '\0')
 		lenght2++;
 
-		printf("%d", lenght1);
 	if (n >= lenght2)
 		lenght2 = n;
 
