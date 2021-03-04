@@ -10,7 +10,7 @@
 * Return: pointer
 */
 
-int *_memset(int *s, int c, unsigned int size)
+char *_memset(char *s, int c, unsigned int size)
 {
 	unsigned int i;
 
@@ -31,17 +31,17 @@ int *_memset(int *s, int c, unsigned int size)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *p;
+	void *s;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(size * nmemb);
+	s = malloc(size * nmemb);
 
-	if (p == NULL)
+	if (s == NULL)
 		return (NULL);
 
-	_memset(p, 0, sizeof(size * nmemb));
+	_memset(s, 0, (size * nmemb));
 
-	return (p);
+	return (s);
 }
