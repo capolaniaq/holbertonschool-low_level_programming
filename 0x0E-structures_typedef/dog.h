@@ -16,7 +16,7 @@ struct dog
 	float age;
 	char *owner;
 };
-typedef struct dog my_dog;
+typedef struct dog dog_t;
 
 /* function that initialize a variable of type struct dog*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
