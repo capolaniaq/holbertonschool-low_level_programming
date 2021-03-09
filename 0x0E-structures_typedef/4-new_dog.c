@@ -28,17 +28,21 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (newdog->name == NULL)
 		return (NULL);
 
+	newdog->name = name;
+
+
 	newdog->age = age;
 
 	j = 0;
 	while (*(owner + j) != '\0')
 		j++;
 
-
 	newdog->owner = malloc(j * sizeof(char *) + 1);
 
 	if (newdog->owner == NULL)
 		return (NULL);
+
+	newdog->owner = owner;
 
 	return (newdog);
 
