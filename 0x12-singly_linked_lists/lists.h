@@ -23,8 +23,12 @@ struct list
 typedef struct list list_t;
 
 
+
+/**/
+int _strlen(char *str);
+
 /*function that print the character*/
-int _putchar (char c);
+int _putchar(char c);
 
 /*function that prints all the elements of a list_t list.*/
 size_t print_list(const list_t *h);
