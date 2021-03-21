@@ -4,7 +4,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct list 
+/**
+* struct list - singly linked lists
+* @str: string
+* @len: length of the string
+* @next: points to the next node
+*
+* Description: singly linked list node structure
+*/
+
+struct list
 {
 	char *str;
 	unsigned int len;
