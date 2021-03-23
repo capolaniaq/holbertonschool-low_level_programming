@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	listint_t *delete = NULL;
 	int i = 0;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
 	delete = *head;
 	*head = delete->next;
@@ -23,4 +23,3 @@ int pop_listint(listint_t **head)
 
 	return (i);
 }
-
