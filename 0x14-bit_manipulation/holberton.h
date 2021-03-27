@@ -13,6 +13,9 @@ int potencia(int i);
 /* function that return lenght of the string*/
 unsigned int strlentotal(const char *b);
 
+/**function that return power of 2 in index indicated*/
+unsigned long int potencia2(unsigned long int i);
+
 /*function that print ceros for complete*/
 void print_cero(int i, int j);
 
