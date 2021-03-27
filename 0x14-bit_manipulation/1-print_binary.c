@@ -21,7 +21,7 @@ void print_binary(unsigned long int n)
 	while (pot < n)
 	{
 		pot = x;
-		x = potencia(pot);
+		x = potencia2(pot);
 		if (x > n)
 		{
 			n = n - pot;
@@ -40,13 +40,13 @@ void print_binary(unsigned long int n)
 }
 
 /**
-* potencia - function that return power to 2
+* potencia2 - function that return power to 2
 * @i: number of the power
 *
 * Return: power of 2 int index i
 */
 
-int potencia(int i)
+unsigned long int potencia2(unsigned long int i)
 {
 	if (i == 0)
 		return (1);
