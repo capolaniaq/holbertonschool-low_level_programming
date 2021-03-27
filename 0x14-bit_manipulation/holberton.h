@@ -1,17 +1,20 @@
 #ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
 
+/*writes the character c to stdout */
+int _putchar(char c);
+
 /*function that converts a binary number to an unsigned int*/
 unsigned int binary_to_uint(const char *b);
 
-/***/
+/* function that return power of 2 in index indicated*/
 int potencia(int i);
 
-/**/
+/* function that return lenght of the string*/
 unsigned int strlentotal(const char *b);
 
-/**/
-unsigned int strlenfunctional(const char *b);
+/*function that print ceros for complete*/
+void print_cero(int i, int j);
 
 /*function that prints the binary representation of a number.*/
 void print_binary(unsigned long int n);
