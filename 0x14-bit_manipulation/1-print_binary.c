@@ -20,15 +20,6 @@ void print_binary(unsigned long int n)
 
 	while (pot < n)
 	{
-		if (x == pot)
-		{
-			n = n - pot;
-			x = 0;
-			pot = 0;
-			print_cero(i, j);
-			i = j;
-			j = 0;
-		}
 		pot = x;
 		x = potencia2(pot);
 		if (x > n)
