@@ -21,17 +21,20 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	lread = 0;
 	buffer = malloc(sizeof(char) * letters);
 
+	if (buffer == NULL)
+		return (0);
+
 	if (!filename)
 		return (0);
 
-	file = open(filename, O_RDONLY);
+	file = open(filename, O_RDWR);
 
 	if (file == -1)
 		return (0);
 
 	lread = read(file, buffer, letters);
 
-	if (!lread)
+	if (lread == -1)
 		return (0);
 
 	lprint = write(STDOUT_FILENO, buffer, lread);
