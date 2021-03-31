@@ -13,24 +13,21 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int file = 0;
-	int bytes_written = 0;
+	int file_add = 0;
 	int i = 0;
 
-	if (!filename)
+	if (filename == NULL)
 		return (-1);
 
-	file = open(filename, O_WRONLY | O_APPEND);
+	file_add = open(filename, O_WRONLY | O_APPEND);
 
-	if (file == -1)
+	if (file_add < 0)
 		return (-1);
 
 	while (*(text_content + i) != '\0')
 		i++;
 
-	bytes_written = write(file, text_content, i);
+	write(file_add, text_content, i);
 
-	if (bytes_written == -1)
-		return (-1);
 	return (1);
 }
