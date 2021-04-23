@@ -17,13 +17,15 @@ The different task for to development this project
 ## 0.  A library is not a luxury but one of the necessities of life
 
 Create the static library libholberton.a containing all the functions listed below:
-## libholberton.a, holberton.h
+[libholberton.a](https://github.com/capolaniaq/holbertonschool-low_level_programming/blob/main/0x09-static_libraries/libholberton.a)
+
+[holberton.h](https://github.com/capolaniaq/holbertonschool-low_level_programming/blob/main/0x09-static_libraries/holberton.h)
 
 ## 1.  Without libraries what have we? We have no past and no future
 
 Create a script called create_static_lib.sh that creates a static library called liball.a from all the .c files thatare in the current directory.
 
-## create_static_lib.sh
+[create_static_lib.sh](https://github.com/capolaniaq/holbertonschool-low_level_programming/blob/main/0x09-static_libraries/create_static_lib.sh)
 
 ## SmartyPants
 
