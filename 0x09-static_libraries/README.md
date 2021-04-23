@@ -17,6 +17,7 @@ The different task for to development this project
 ## 0.  A library is not a luxury but one of the necessities of life
 
 Create the static library libholberton.a containing all the functions listed below:
+
 [libholberton.a](https://github.com/capolaniaq/holbertonschool-low_level_programming/blob/main/0x09-static_libraries/libholberton.a)
 
 [holberton.h](https://github.com/capolaniaq/holbertonschool-low_level_programming/blob/main/0x09-static_libraries/holberton.h)
