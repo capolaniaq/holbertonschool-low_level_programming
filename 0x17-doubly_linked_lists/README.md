@@ -28,7 +28,9 @@ Data structure:
 		        struct dlistint_s *prev;
 			    struct dlistint_s *next;
 	} dlistint_t;
+
 ```
+
 ## task
 ### 0. Print list
 	Write a function that prints all the elements of a `dlistint_t` list.
