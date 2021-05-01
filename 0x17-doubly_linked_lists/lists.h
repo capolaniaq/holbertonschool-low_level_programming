@@ -40,7 +40,8 @@ void free_dlistint(dlistint_t *head);
 /* function that returns the nth node of a dlistint_t linked list. */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 
-/*function that returns the sum of all the data (n) of a dlistint_t linked list*/
+/*function that returns the sum of all the data (n)*/
+/*of a dlistint_t linked list*/
 int sum_dlistint(dlistint_t *head);
 
 /* function that inserts a new node at a given position.*/
