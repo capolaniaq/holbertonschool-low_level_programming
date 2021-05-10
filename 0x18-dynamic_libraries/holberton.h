@@ -1,4 +1,4 @@
-#ifndef _HOLBERTON_H-
+#ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
 
 int _putchar(char c);
@@ -23,4 +23,4 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
 
-#endif /* _HOLBERTON_H_
+#endif /* _HOLBERTON_H_*/
