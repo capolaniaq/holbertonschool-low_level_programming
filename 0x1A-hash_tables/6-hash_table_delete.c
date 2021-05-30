@@ -1,10 +1,10 @@
 #include "hash_tables.h"
 
 /**
+ * hash_table_delete - Function that free the all allocs in the ht
+ * @ht: ht to free
  *
- *
- *
- *
+ * Return: void
 */
 
 void hash_table_delete(hash_table_t *ht)
