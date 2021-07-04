@@ -1,0 +1,22 @@
+#execute the files to print the log
+CC = gcc
+
+SRC = main.c holberton.c
+
+OBJ = main.o holberton.o
+
+NAME = holberton
+
+all: main.o holberton.o  m.h
+	$(CC) $(OBJ) -o $(NAME)
+
+main: main.c m.h
+	$(CC) -c -o main.o main.c
+
+holberton: holberton.c m.h
+	$(CC) -c -o holberton.o holberton.c
+
+
+
+
+
