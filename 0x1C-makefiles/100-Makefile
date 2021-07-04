@@ -7,8 +7,6 @@ OBJ = $(SRC:.c=.o)
 
 NAME = holberton
 
-RM = rm -f
-
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 .PHONY: clean fclean oclean all re
