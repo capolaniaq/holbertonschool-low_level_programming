@@ -13,7 +13,9 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 .PHONY: clean fclean oclean all re
 
-all: $(OBJ)  m.h
+DEPS = m.h
+
+all: $(OBJ)  $(DEPS)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
