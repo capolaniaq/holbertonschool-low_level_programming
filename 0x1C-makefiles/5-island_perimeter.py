@@ -9,8 +9,7 @@ def island_perimeter(grid):
     colum = []
     grid_change = []
     counter = 0
-    leght = len(grid[0])
-    while (len(grid_change) < leght):
+    while (len(grid_change) < len(grid[0])):
         for row in grid:
             colum.append(row[counter])
         grid_change.append(colum)
