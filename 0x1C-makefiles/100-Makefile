@@ -15,7 +15,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 DEPS = m.h
 
-all: $(OBJ)  $(DEPS)
+all: $(DEPS) $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
