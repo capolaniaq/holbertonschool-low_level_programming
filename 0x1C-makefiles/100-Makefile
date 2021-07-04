@@ -11,7 +11,7 @@ RM = rm -f
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-.PHONY = clean fclean oclean all re
+.PHONY: clean fclean oclean all re
 
 all: $(OBJ)  m.h
 	$(CC) $(OBJ) -o $(NAME)
