@@ -4,24 +4,12 @@
 
 def island_perimeter(grid):
     """perimeter of the island described in grid"""
-    vertically = 0
-    horizontally = 0
-    colum = []
-    grid_change = []
-    counter = 0
-    while (len(grid_change) < len(grid[0])):
-        for row in grid:
-            colum.append(row[counter])
-        grid_change.append(colum)
-        colum = []
-        counter += 1
-
+    perimeter = 0
     for row in grid:
-        if 1 in row:
-            vertically += 1
-
-    for colum in grid_change:
-        if 1 in colum:
-            horizontally += 1
-
-    return (2*(horizontally + vertically))
+        for land in row:
+            if land == 1:
+                if perimeter == 0:
+                    perimeter +=3
+                else:
+                    perimeter +=2
+    return perimeter + 1
