@@ -1,6 +1,14 @@
 #include "search_algos.h"
 #include <math.h>
 
+/**
+ * jump_search - Function that searhc the argument with jump search
+ * @array: pointer to firts argument of the array
+ * @size: size_t type is the size of the array
+ * @value: integer type is the argument to find
+ *
+ * Return: integer of index to find or -1 in case failure
+ */
 
 int jump_search(int *array, size_t size, int value)
 {
