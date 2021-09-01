@@ -50,6 +50,10 @@ int binary_search(int *array, size_t size, int value)
 {
 	int idx = 0;
 
+    if(!value)
+    {
+        return (-1);
+    }
 	idx = binarySearch(array, 0, size -1, value);
 
 	return (idx);
