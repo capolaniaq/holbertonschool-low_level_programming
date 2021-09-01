@@ -14,33 +14,28 @@ int jump_search(int *array, size_t size, int value)
 {
 	size_t root;
 	size_t index;
-	size_t idx_max;
+
 
 	root = sqrt(size);
 
 	for (index = 0; index <= size; index = index + root)
 	{
-		if (value <= array[index])
-		{
-			break;
-		}
 		printf("Value checked array[%ld] = [%d]\n", index, array[index]);
-	}
-	idx_max = index;
-	if (idx_max >= size)
-	{
-		idx_max = size - 1;
-	}
-	index = index - root;
-	printf("Value found between indexes [%ld] and [%ld]\n",
-		   index, index + root);
-	for (; index <= idx_max; index++)
-	{
-		printf("Value checked array[%ld] = [%d]\n", index, array[index]);
-		if (array[index] == value)
+		if (value >= array[index] && value <= array[index + root])
 		{
+			printf("Value found between indexes [%ld] and [%ld]\n",
+			index, index + root);
+			for (; index < index + root; index++)
+			{
+				printf("Value checked array[%ld] = [%d]\n", index, array[index]);
+				if (array[index] == value)
+				{
+					return (index);
+				}
+			}
 			return (index);
 		}
+
 	}
 
 	return (-1);
